@@ -1,8 +1,18 @@
 print("Welcome to my Arcade!")
-reply = input("Which game do you want to play?, TTT or Snake: ")
-if reply == "TTT" :
+reply = 0
+print("Games available\n\t Game 1 - TTT\n\t Game 2 - Snake")
+
+while True:
+    try:
+        while (reply < 1) or (reply > 2):
+            reply = int(input("Which game do you want to play? Game 1 or Game 2: "))
+        break
+    except ValueError:
+        print("Please enter a valid input")
+
+if reply == 1 :
     print("game on")
-elif reply == "Snake" or reply == "snake":
+elif reply == 2:
     import turtle
     import time
     import random
@@ -168,3 +178,4 @@ elif reply == "Snake" or reply == "snake":
         time.sleep(delay)
 
     background.mainloop()
+  
