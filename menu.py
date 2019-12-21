@@ -175,10 +175,14 @@ elif reply == 2:
     background.bgcolor("turquoise")
     background.setup(width=800, height=800) 
     background.tracer(0) 
+    background.bgpic("final1.gif")
+
+    turtle.register_shape("choc1.gif")
+    turtle.register_shape("mouth.gif")
 
     mouth = turtle.Turtle()
     mouth.speed(0)
-    mouth.shape("square")
+    mouth.shape("mouth.gif")
     mouth.color("pink")
 
     mouth.penup()
@@ -187,7 +191,7 @@ elif reply == 2:
 
     chocolate = turtle.Turtle()
     chocolate.speed(0)
-    chocolate.shape("circle")
+    chocolate.shape("choc1.gif")
     chocolate.color("yellow")
 
     chocolate.penup()
@@ -275,7 +279,7 @@ elif reply == 2:
 
             new_segment = turtle.Turtle()
             new_segment.speed(0)
-            new_segment.shape("square")
+            new_segment.shape("circle")
             new_segment.color("hot pink")
             new_segment.penup()
             segments.append(new_segment)
