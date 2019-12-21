@@ -1,6 +1,6 @@
 print("Welcome to my Arcade!")
 reply = 0
-print("Games available\n\t Game 1 - TTT\n\t Game 2 - Snake")
+print("Games available\n\t Game 1 - Tic_Tac_Toe\n\t Game 2 - Snake")
 
 while True:
     try:
